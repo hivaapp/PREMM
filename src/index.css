@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #FAF9F7;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F3F1EC;
+  --color-border: #E6E2D9;
+  
+  --color-text: #21201C;
+  --color-text-mid: #6B6860;
+  --color-text-light: #AAA49C;
+  
+  --color-brand: #D97757;
+  --color-brand-hover: #C4663F;
+  --color-brand-tint: #FAF0EB;
+  
+  --color-success: #417A55;
+  --color-success-bg: #EBF5EE;
+  
+  --color-warning: #A0622A;
+  --color-warning-bg: #FDF4EC;
+  
+  --color-error: #C0392B;
+  --color-error-bg: #FDECEA;
+
+  --font-sans: 'Söhne', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+:root {
+  --max-width: 800px;
+  --padding-mobile: 24px;
+  --padding-desktop: 32px;
+  --topbar-height: 48px;
+  --shadow-light: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center h-10 px-4 rounded-md font-medium transition-colors;
+    min-height: 44px; /* Touch target */
+  }
+  
+  .btn-primary {
+    @apply bg-[var(--color-brand)] text-white;
+  }
+  
+  .btn-primary:hover {
+    @apply bg-[var(--color-brand-hover)];
+  }
+  
+  .btn-secondary {
+    @apply bg-[var(--color-surface)] text-[var(--color-text)] border border-[var(--color-border)];
+  }
+  
+  .btn-secondary:hover {
+    @apply bg-[var(--color-surface-alt)];
+  }
+  
+  .btn-ghost {
+    @apply bg-transparent text-[var(--color-text)];
+  }
+  
+  .btn-ghost:hover {
+    @apply bg-[var(--color-surface-alt)];
+  }
+  
+  .card {
+    @apply bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-4;
+    box-shadow: none;
+  }
+  
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .badge-success {
+    @apply bg-[var(--color-success-bg)] text-[var(--color-success)];
+  }
+  
+  .badge-warning {
+    @apply bg-[var(--color-warning-bg)] text-[var(--color-warning)];
+  }
+  
+  .list-row {
+    @apply flex items-center min-h-[48px] border-b border-[var(--color-border)];
+  }
+  
+  .list-row:last-child {
+    @apply border-b-0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

@@ -1,0 +1,52 @@
+export const projects = [
+  {
+    id: 1,
+    name: "My First Saree",
+    type: "E-Commerce",
+    description: "Empowering weavers to sell directly — zero middlemen.",
+    link: "https://myfirstsaree.com/",
+    metrics: null,
+  },
+  {
+    id: 2,
+    name: "Pattuvastra",
+    type: "E-Commerce",
+    description: "Silk saree store for Telugu YouTuber Bangkok Pilla.",
+    link: "https://www.pattuvastra.com/",
+    metrics: null,
+  },
+  {
+    id: 3,
+    name: "HIVAapp",
+    type: "Mobile App",
+    description: "AI-powered manifestation & visualization app.",
+    link: "https://hivaapp.com/",
+    playStore: "https://play.google.com/store/apps/details?id=com.hivaapp",
+    appStore: "https://apps.apple.com/app/id1234567890",
+    metrics: null,
+  },
+  {
+    id: 4,
+    name: "Unlock The Content",
+    type: "Web App",
+    description: "Content locking tool for creators — unlock via follow/ad watch.",
+    link: "https://hivaapp.com/",
+    metrics: null,
+  },
+  {
+    id: 5,
+    name: "LIKM",
+    type: "Web App",
+    description: "Creator personality-based matchmaking.",
+    link: "https://hivaapp.com/lik",
+    metrics: "10,000+ users in 4 days 🚀",
+  },
+  {
+    id: 6,
+    name: "Krita",
+    type: "E-Commerce",
+    description: "Beautifully designed e-commerce experience.",
+    link: "https://krita.gpremsai9.workers.dev/",
+    metrics: null,
+  }
+];
