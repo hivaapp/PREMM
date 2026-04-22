@@ -5,8 +5,8 @@ const Footer = () => {
     <footer className="border-t border-[var(--color-border)] bg-[var(--color-surface)] py-12">
       <div className="max-w-[var(--max-width)] mx-auto px-[var(--padding-mobile)] md:px-[var(--padding-desktop)] flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
         <div className="flex flex-col gap-2 items-center md:items-start">
-          <img src={logo} alt="PREMM TECH" className="h-8 md:h-10 w-auto object-contain scale-[1.3] md:scale-[1.4] origin-center md:origin-left" />
-          <span className="text-sm text-[var(--color-text-mid)] mt-4 md:mt-2">
+          <img src={logo} alt="PREMM TECH" className="h-10 md:h-12 w-auto object-contain scale-[1.5] md:scale-[1.6] origin-center md:origin-left" />
+          <span className="text-sm text-[var(--color-text-mid)] mt-6 md:mt-4">
             Building tomorrow's products, today.
           </span>
         </div>

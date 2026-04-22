@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="max-w-[var(--max-width)] mx-auto w-full px-[var(--padding-mobile)] md:px-[var(--padding-desktop)] flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src={logo} alt="PREMM TECH" className="h-8 md:h-10 w-auto object-contain scale-[1.3] md:scale-[1.4] origin-left" />
+          <img src={logo} alt="PREMM TECH" className="h-10 md:h-12 w-auto object-contain scale-[1.5] md:scale-[1.6] origin-left" />
         </div>
 
         {/* Desktop Nav */}
