@@ -3,11 +3,6 @@ import { ShieldCheck, Zap, Repeat } from 'lucide-react';
 
 const reasons = [
   {
-    icon: <ShieldCheck size={24} />,
-    title: "Government Registered",
-    description: "PREMM TECH Solutions is officially registered with the Government of India."
-  },
-  {
     icon: <Zap size={24} />,
     title: "Fast Delivery",
     description: "We ship MVPs fast. LIKM hit 10,000 users within 4 days of launch."
@@ -23,14 +18,10 @@ const WhyUs = () => {
   return (
     <section className="py-24 border-t border-[var(--color-border)]">
       <div className="mb-12 text-center md:text-left">
-        <div className="badge badge-warning mb-4 px-3 py-1 gap-1 inline-flex">
-          <span>🇮🇳</span>
-          <span>Registered with Govt. of India</span>
-        </div>
         <h2 className="text-3xl font-bold text-[var(--color-text)] mb-4">Why Clients Choose Us</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {reasons.map((reason, index) => (
           <motion.div
             key={index}

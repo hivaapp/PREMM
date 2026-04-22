@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,15 +11,14 @@ const Navbar = () => {
       <div className="max-w-[var(--max-width)] mx-auto w-full px-[var(--padding-mobile)] md:px-[var(--padding-desktop)] flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <span className="font-bold text-lg tracking-tight text-[var(--color-text)]">
-            PREMM TECH
-          </span>
+          <img src={logo} alt="PREMM TECH" className="h-8 md:h-10 w-auto object-contain scale-[1.3] md:scale-[1.4] origin-left" />
         </div>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           <a href="#about" className="text-sm font-medium text-[var(--color-text-mid)] hover:text-[var(--color-brand)] transition-colors">About</a>
           <a href="#services" className="text-sm font-medium text-[var(--color-text-mid)] hover:text-[var(--color-brand)] transition-colors">Services</a>
+          <a href="#pricing" className="text-sm font-medium text-[var(--color-text-mid)] hover:text-[var(--color-brand)] transition-colors">Plans</a>
           <a href="#projects" className="text-sm font-medium text-[var(--color-text-mid)] hover:text-[var(--color-brand)] transition-colors">Projects</a>
           <a 
             href="https://wa.me/916302024335" 
@@ -49,6 +49,7 @@ const Navbar = () => {
         >
           <a href="#about" onClick={() => setIsOpen(false)} className="px-4 py-2 text-[var(--color-text)] font-medium">About</a>
           <a href="#services" onClick={() => setIsOpen(false)} className="px-4 py-2 text-[var(--color-text)] font-medium">Services</a>
+          <a href="#pricing" onClick={() => setIsOpen(false)} className="px-4 py-2 text-[var(--color-text)] font-medium">Plans</a>
           <a href="#projects" onClick={() => setIsOpen(false)} className="px-4 py-2 text-[var(--color-text)] font-medium">Projects</a>
           <a 
             href="https://wa.me/916302024335" 

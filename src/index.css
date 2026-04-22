@@ -27,7 +27,7 @@
 }
 
 :root {
-  --max-width: 800px;
+  --max-width: 1100px;
   --padding-mobile: 24px;
   --padding-desktop: 32px;
   --topbar-height: 48px;

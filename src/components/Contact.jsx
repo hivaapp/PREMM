@@ -17,18 +17,32 @@ const Contact = () => {
           We're just a WhatsApp message away. No long forms, no waiting.
         </p>
 
-        <a 
-          href="https://wa.me/916302024335" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="btn btn-primary gap-2 px-8 h-12 text-base shadow-[var(--shadow-light)] hover:-translate-y-0.5 transition-transform"
-        >
-          <MessageCircle size={20} />
-          Chat on WhatsApp &rarr;
-        </a>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <a 
+            href="https://wa.me/916302024335" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn btn-primary gap-2 px-8 h-12 text-base shadow-[var(--shadow-light)] hover:-translate-y-0.5 transition-transform w-full sm:w-auto"
+          >
+            <MessageCircle size={20} />
+            Chat on WhatsApp
+          </a>
+          
+          <a 
+            href="https://wa.me/917013503737" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn btn-secondary gap-2 px-8 h-12 text-base shadow-[var(--shadow-light)] hover:-translate-y-0.5 transition-transform w-full sm:w-auto"
+          >
+            <MessageCircle size={20} />
+            Alt. WhatsApp
+          </a>
+        </div>
         
-        <p className="text-sm text-[var(--color-text-light)] mt-4 font-mono">
-          +91 63020 24335
+        <p className="text-sm text-[var(--color-text-light)] mt-6 font-mono flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+          <span>+91 63020 24335</span>
+          <span className="hidden sm:inline text-[var(--color-border)]">|</span>
+          <span>+91 70135 03737</span>
         </p>
       </motion.div>
     </section>
